@@ -11,5 +11,10 @@
 @interface Document : NSDocument
 
 
+@property (nonatomic) NSMutableArray *tasks;
+@property (nonatomic) IBOutlet NSTableView *tasktable;
+
+-(IBAction)addTasks:(id)sender;
+
 @end
 
